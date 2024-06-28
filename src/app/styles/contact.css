@@ -1,0 +1,145 @@
+
+
+.layer-1-5{
+    display: flex;
+    height: 100%;
+    width: 100%;
+
+}
+
+.first-1-5{
+    padding: 10% 0;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+
+}
+
+.first-1-5-reg{
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.first-1-5 h1{
+    font-family: CC Tough Talk;
+font-size: 40px;
+font-weight: 400;
+line-height: 64.81px;
+letter-spacing: 0.1em;
+text-align: center;
+ color: var(--yellow-benat);
+}
+
+.second-1-5{
+    width: 100%;
+    background: black;
+}
+
+
+.parent-container{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+}
+
+
+.exetreme-div{
+    height: 100%;
+    width: 100%;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    gap: 10px;
+    text-align: center;
+}
+
+.ony{
+    font-size: 26px;
+    font-weight: 500;
+    line-height: 31.47px;
+    text-align: center;
+}
+
+.twy{
+    font-family: Inter;
+font-size: 19px;
+font-weight: 400;
+line-height: 22.99px;
+text-align: center;
+}
+
+
+.onit{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+}
+
+.thry{
+    font-size: 19px;
+    font-weight: 400;
+    line-height: 22.99px;
+    text-align: center;
+}
+
+
+
+.down-onit{
+    width: 100%;
+}
+
+.down-onit-reg{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.down-onit-app{
+    width: 100%;
+    height: 117px;
+    border-radius: 25px 25px 0px 0px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #1940C5;
+    color: var(--jaune-benat, #FFD953);
+    font-family: CC Tough Talk;
+    font-size: 40px;
+    font-weight: 400;
+    line-height: 43px;
+    text-align: left;
+
+
+}
+
+
+.height-70{
+    height: 70%;
+}
+
+.height-30{
+    height: 30%;
+}
+
+@media (max-width : 900px) {
+    .layer-1-5{
+        flex-direction: column;
+    }
+    .parent-container{
+        /* height: unset; */
+    }
+    
+}
