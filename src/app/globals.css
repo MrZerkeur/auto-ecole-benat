@@ -1723,3 +1723,7 @@ color: white;
     display: none;
   }
 }
+
+.footer-item:hover{
+  color: var(--yellow-benat);
+}

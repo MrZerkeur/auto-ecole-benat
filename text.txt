@@ -1,5 +1,5 @@
 <h1>1. Presentation du site</h1>
-<h1>2. Conditions generales d&apos;’utilisation du site et des services proposes.</h1>
+<h1>2. Conditions generales d&apos;utilisation du site et des services proposes.</h1>
 <h1>3. Description des services fournis.</h1>
 <h1>4. Limitations contractuelles sur les donnees techniques.</h1>
 <h1>5. Propriete intellectuelle et contrefacons.</h1>

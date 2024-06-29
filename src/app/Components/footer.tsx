@@ -93,7 +93,7 @@ function Footing()
                 <img src="/img/benat-footer-logo.png" alt='non' />
             </div>
             <div>
-            <ul className="footer-menu">
+            <ul className="footer-menu ">
         <li className="footer-item">
           <Link href="/">ACCEUIL</Link>
         </li>

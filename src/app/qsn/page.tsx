@@ -85,9 +85,11 @@ export default function qsn(){
                             </div>
                         </div>
                         <div className="review-google-revi hefb">
+                        <a href="https://www.google.com/maps/place/Driving+School+Benat/@44.9933915,-0.452552,17z/data=!4m8!3m7!1s0xd5532a975991637:0x2de7c88c346a2f48!8m2!3d44.9933878!4d-0.4476757!9m1!1b1!16s%2Fg%2F11g0hnyv7x?entry=ttu" target="_blank">
                             <div>
                                 <p>VOIR NOS AVIS GOOGLE</p> 
                             </div>
+                        </a>
                         </div>
                     </div>
                 </div>

@@ -48,7 +48,7 @@ function Passage(){
   return(
     <div className="layer-4-1">
         <div className="layer-4-1-holder">
-        <p>La majorité des élèves décrochent leur permis dès le premier passage de l&apos;’examen !</p>
+        <p>La majorité des élèves décrochent leur permis dès le premier passage de l&apos;examen !</p>
         <div className="text-under-sline"/>
         <img src="/img/cute-car.png" className="cute-car" alt="cute"/>
         </div>
@@ -108,7 +108,7 @@ function First()
           </div>
             <div className="main_text flex flex-col gap-4">
               <h1 className="sans text-2xl font-medium leading-9 text-center">
-              Horaires d&apos;’ouverture de l&apos;’agence :
+              Horaires d&apos;ouverture de l&apos;agence :
               </h1>
               <div className="bf5">
               <MyTable data={MyData}  />
@@ -184,7 +184,7 @@ function Second()
           </div>
             <div className="main_text flex flex-col gap-4">
               <h1 className="sans text-2xl font-medium leading-9 text-center">
-              Horaires d&apos;’ouverture de l&apos;’agence :
+              Horaires d&apos;ouverture de l&apos;agence :
               </h1>
               <MyTable data={MyData} />
             </div>
@@ -216,7 +216,7 @@ function Second()
               21 ROUTE DE BOURG 33710 PUGNAC
               </h1>
               <p>
-              Nous sommes disponible par téléphone au 05 57 43 34 20 ou par mail à l&apos;’adresse contact@exemple.com
+              Nous sommes disponible par téléphone au 05 57 43 34 20 ou par mail à l&apos;adresse contact@exemple.com
               </p>
               <div className="review-google-rev hefb">
                     <div>
@@ -308,9 +308,12 @@ export default function Home()
           </h1>
           <div className="holding-fold">
             <div className="review-google-rev hefb">
+              <a href="/qsn" target="_blank">
+
               <div>
                 <p>EN SAVOIR PLUS</p> 
               </div>
+              </a>
             </div>
           </div>
         </div>
@@ -384,18 +387,23 @@ export default function Home()
                       <StarIcon>&#9733;</StarIcon>
                 </div>
                  <div><h2>93% de satisfaction client</h2></div>
-                 <div className="button-google-rev">
+                 <div className="button-google-rev cursor-pointer">
+                   <a href="https://www.google.com/maps/place/Driving+School+Benat/@44.9933915,-0.452552,17z/data=!4m8!3m7!1s0xd5532a975991637:0x2de7c88c346a2f48!8m2!3d44.9933878!4d-0.4476757!9m1!1b1!16s%2Fg%2F11g0hnyv7x?entry=ttu" target="_blank">
+
                    <div>
                      <p>VOIR NOS AVIS GOOGLE</p> 
                    </div>
+                   </a>
                    <div className="google-svg">
                       <img src="/icon-chrome.svg" alt="dope"/>
                    </div>
                  </div>
                  <div className="review-google-rev hefb">
+                 <a href="https://www.google.com/maps/place/Driving+School+Benat/@44.9933915,-0.452552,17z/data=!4m8!3m7!1s0xd5532a975991637:0x2de7c88c346a2f48!8m2!3d44.9933878!4d-0.4476757!9m1!1b1!16s%2Fg%2F11g0hnyv7x?entry=ttu" target="_blank">
                     <div>
                       <p>DONNER UN AVIS</p> 
                     </div>
+                    </a>
                     <div className="google-svg">
                       <img src="/Vector.svg" alt="hope"/>
                    </div>
