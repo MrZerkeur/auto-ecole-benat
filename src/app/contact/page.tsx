@@ -88,11 +88,11 @@ export default function contact(){
                             <h1>RENCONTRONS-NOUS!</h1>
                             </div>
                             <div>
-                                <img src="/img/lamp.png" />
+                                <img src="/img/lamp.png" className="lamp-img"/>
                             </div>
                         </div>
                         <div className="flex justify-center"> 
-                            <img src="/img/fake-laptop.png" />
+                            <img src="/img/fake-laptop.png" alt='qwe'/>
                         </div>
                     </div>
                 </div>

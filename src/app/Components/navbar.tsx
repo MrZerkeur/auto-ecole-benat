@@ -15,7 +15,7 @@ const Navbar: React.FC = () => {
   return (
     <div className="flex flex-col gap-0 ">
     <nav className="navbar">
-    <img
+    <img alt='iopl'
       src="/logo-nav.svg"
       />
       <ul className="navbar-menu">
@@ -40,19 +40,19 @@ const Navbar: React.FC = () => {
     </nav>
     <ul className= {`navbar-menu-h ${!navyes ? "undisplay" : ""}`}>
         <li className="navbar-item-h">
-          <Link href="/" className='one-styling-nav' onClick={() => handleSwitch()} >ACCUEIL</Link>
+          <Link href="/" data-page="acceuil" className='one-styling-nav' onClick={() => handleSwitch()} >ACCUEIL</Link>
         </li>
         <li className="navbar-item-h">
-          <Link href="/permis" className='one-styling-nav' onClick={() => handleSwitch()} >PERMIS</Link>
+          <Link href="/permis" data-page="permis" className='one-styling-nav' onClick={() => handleSwitch()} >PERMIS</Link>
         </li>
         <li className="navbar-item-h">
-          <Link href="/code" className='one-styling-nav' onClick={() => handleSwitch()} >CODE</Link>
+          <Link href="/code" data-page="code" className='one-styling-nav' onClick={() => handleSwitch()} >CODE</Link>
         </li>
         <li className="navbar-item-h">
-          <Link href="/qsn" className='one-styling-nav' onClick={() => handleSwitch()} >QUI SOMME-NOUS?</Link>
+          <Link href="/qsn"  data-page="qsn" className='one-styling-nav' onClick={() => handleSwitch()} >QUI SOMME-NOUS?</Link>
         </li>
         <li className="navbar-item-h">
-          <Link href="/contact" className='one-styling-nav' onClick={() => handleSwitch()} >CONTACT</Link>
+          <Link href="/contact" data-page="contact" className='one-styling-nav' onClick={() => handleSwitch()} >CONTACT</Link>
         </li>
       </ul>
     </div>

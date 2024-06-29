@@ -18,7 +18,7 @@ export default function DocumentAf({ImgPath} : Typeimg){
             <div className='multiple-layer-regulating'>
                 <div className='multiple-layer-mid'>
 
-                     <div className='multiple-layer-midimg-reg'><img src={ImgPath} className='img-prob'/></div>
+                     <div className='multiple-layer-midimg-reg'><img src={ImgPath} className='img-prob' alt='silo'/></div>
                      <div className='line-in-midlle-layers'></div>
                      <div className=''>
 

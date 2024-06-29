@@ -1,4 +1,6 @@
 import Link from "next/link"
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
+import { faPhone } from "@fortawesome/free-solid-svg-icons"
 
 export default function Footer()
 {
@@ -15,7 +17,7 @@ export default function Footer()
     <div className="fotter-toping toping2">
         <div className="fm-section-on-top">
             <div>
-                <img src="/img/benat-footer-logo.png" alt="" />
+                <img src="/img/benat-footer-logo.png" alt='iko' />
             </div>
             <div>
             <ul className="footer-menu">
@@ -41,9 +43,12 @@ export default function Footer()
         <div className="fm-section-on-midlle">
             <p>Bienvenue chez Benat Auto École, votre partenaire confiance pour une conduite sûre et réussie à Saint André de Cubzac et Pugnac! Avec deux agences à votre service, nous offrons une gamme complète de cours de conduite. Nos formateurs qualifiés vous guideront avec expertise à travers des sessions pratiques sur route, vous préparant non seulement pour le permis, mais pour une conduite confiante et fluide. Rejoignez-nous chez Benat Auto École et laissez-nous vous mener vers la route du succès!</p>
         </div>
-        <div className="phone-numberfooter">
-            <div> <p>05 57 43 34 20</p></div>
-        </div>
+        <div className="phone-holder">
+                            <div className="phone-holder-reg">
+                                <p>05 57 43 34 20</p>
+                                <FontAwesomeIcon icon={faPhone} color="#1940C5" />
+                            </div>
+                        </div>
         <div className="fm-section-on-bottom">
             <div className="lmt f-footer tge">
                 <p>auto-ecole-benat.fr</p>
@@ -55,7 +60,10 @@ export default function Footer()
     </div>
     <div className="fotter-toping toping3">
         <div className="text-right-right-footer tge">
-        Mentions légales
+          <a href="/ml" target="_blank">
+
+            Mentions légales
+          </a>
         </div>
         <div className="text-right-right-footer tge">
         Politique de confidentialité
@@ -76,13 +84,13 @@ function Footing()
     <div className="fotter-toping toping1">
         <div className="logo-wf-section">
         <div><p>Site internet réalisé par :</p></div>
-        <img src="/img/webfabric.png" className="webfabric-logo"/>
+        <img src="/img/webfabric.png" className="webfabric-logo" alt="jinu"/>
         </div>
     </div>
     <div className="fotter-toping toping2">
         <div className="fm-section-on-top">
             <div>
-                <img src="/img/benat-footer-logo.png" alt="" />
+                <img src="/img/benat-footer-logo.png" alt='non' />
             </div>
             <div>
             <ul className="footer-menu">

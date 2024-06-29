@@ -46,7 +46,7 @@ export default function qsn(){
     return (
         <>
         <div className="four-layer-all-the-time">
-            <div className="flatf">
+            <div className="flatf flaflt">
                     <h1 className="permis-upper-text4">
                     QUI SOMMES-NOUS?
                     </h1>
@@ -56,7 +56,7 @@ export default function qsn(){
         <div className="layer-2-3">
         <div className="layering3">
             <div className="layer-2-3-img">
-                <img src="/img/multi-cars.png" alt="" />
+                <img src="/img/multi-cars.png" alt='kks' />
             </div>
             <div className="layer-2-3-reg">
                 <h1>
@@ -84,7 +84,7 @@ export default function qsn(){
                                 <FontAwesomeIcon icon={faPhone} color="#1940C5" />
                             </div>
                         </div>
-                        <div className="review-google-revi">
+                        <div className="review-google-revi hefb">
                             <div>
                                 <p>VOIR NOS AVIS GOOGLE</p> 
                             </div>
@@ -95,7 +95,7 @@ export default function qsn(){
 
             <div className="second-4-3">
                 <div>
-                    <img src="/gif/map.gif" alt="" />
+                    <img src="/gif/map.gif" alt='mop' />
                 </div>
             </div>
         </div>

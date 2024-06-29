@@ -1,0 +1,51 @@
+.conditions-first-page-texts{
+    background-color: #E6ECFF;
+}
+
+.conditions-first-page-texts-reg{
+    max-width: 1,382px;
+    height: 100%;
+    font-family: CC Tough Talk;
+    font-size: clamp(15px,3vw,30px);
+    font-weight: 400;
+    line-height: 48.61px;
+    letter-spacing: 0.1em;
+    text-align: left;
+    padding: 10%;
+    color: #1940C5;
+}
+
+.conditions-second-page-texts{
+    display: flex;
+    justify-content: center;
+    padding: 10%;
+}
+
+.conditions-second-page-texts-reg{
+    /* max-width: 1,382px; */
+    height: 100%;
+    width: 80%;
+
+}
+
+.conditions-second-page-texts-reg h1{
+    font-family: CC Tough Talk;
+font-size: clamp(30px,3vw ,40px);
+font-weight: 400;
+line-height: 64.81px;
+letter-spacing: 0.1em;
+text-align: left;
+color:  #FFC700;
+
+
+}
+
+.conditions-second-page-texts-reg p{
+    font-family: Inter;
+font-size: clamp(16px,3vw,22px);
+font-weight: 400;
+line-height: 26.63px;
+text-align: left;
+
+}
+

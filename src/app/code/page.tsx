@@ -20,17 +20,17 @@ function ThirdLayer(){
                 <div className="grid grid-cols-3 gap-x-4 layer-3-2-midle-regulation">
                     <div className="both-notes">
                     {
-                        <Notes key={0} header={myTitles[0]} text={myTexts[0]} />
+                        <Notes key={0} header={myTitles[0]} text={myTexts[0]} selection={3}/>
                     }   
                     </div>
                     <div className="both-notes">
                     {
-                        <Notes key={1} header={myTitles[1]} text={myTexts[1]} />
+                        <Notes key={1} header={myTitles[1]} text={myTexts[1]} selection={3}/>
                     }
                     </div>
                     <div className="both-notes">
                     {
-                        <Notes key={2} header={myTitles[2]} text={myTexts[2]} />
+                        <Notes key={2} header={myTitles[2]} text={myTexts[2]} selection={3}/>
                     }
                     </div>
                 </div>
@@ -54,7 +54,7 @@ export default function code(){
                      MAIN EN UN TEMPS RECORD
                     </h1>
                 </div>
-            <img src="/img/certified.png" className="certif-absol-2"/>
+            <img src="/img/certified.png" className="certif-absol-2" alt="hilo"/>
         </div>
         {/* <img src="/img/third-page-main-e.png" className="third-page-main-photo" /> */}
         <ThirdLayer />

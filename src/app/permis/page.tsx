@@ -44,12 +44,12 @@ function ThirdLayer(){
                     <div className="grid grid-cols-2 gap-x-4 layer-3-2-midle-rn">
                              <div className="both-notes">
                              {
-                                 <Notes key={0} header={myTitles[0]} text={myTexts[0]} />
+                                 <Notes key={0} header={myTitles[0]} text={myTexts[0]} selection={2}/>
                              }   
                              </div>
                              <div className="both-notes">
                              {
-                                 <Notes key={1} header={myTitles[1]} text={myTexts[1]} />
+                                 <Notes key={1} header={myTitles[1]} text={myTexts[1]} selection={2}/>
                              }
                              </div>
                     </div>
@@ -77,7 +77,7 @@ export default function permis(){
                 obtenez le sans <br /> accroc !
                 </p>
             </div>
-            <img src="/img/certified.png" className="certif-absol"/>
+            <img src="/img/certified.png" alt='gyg' className="certif-absol"/>
 
         </div>
         {/* <img src="/img/page-two-main-e.png" className="page-two-main-photo" /> */}

@@ -72,6 +72,14 @@
   right: 0;
 }
 
+/* .navbar-menu li[data-page="${currentPage}"] a {
+  background-color: yellow; 
+}
+
+.navbar-item a.active {
+  background-color: yellow;
+} */
+
 .regulating-stuff{
 width: 80%;
 display : flex; 
@@ -80,9 +88,25 @@ text-align: start;
  gap: 10px;
 }
 
+
+.section-me{
+  top: 50%;
+  right: 50%;
+  transform: translate(50%, -50%);
+  background-color: rgba(255, 255, 255, 0.4);
+  position: absolute;
+  height: 90%;
+  width: 90%;
+  border-radius: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
 .regulating-stuff h3{
 font-family: CC Tough Talk;
-font-size: 40px;
+font-size: clamp(20px,3vw,40px);
 font-weight: 400;
 line-height: 64.81px;
 letter-spacing: 0.1em;
@@ -92,7 +116,7 @@ color: var(--rouge-benat);
 
 .regulating-stuff p{
 font-family: Inter;
-font-size: 24px;
+font-size: clamp(16px,1.5vw,24px);
 font-weight: 500;
 line-height: 29.05px;
 text-align: left;
@@ -130,7 +154,7 @@ text-align: left;
 }
 
 .flatf{
-    margin-left: 200px;
+    margin-left: 5%;
     
 }
 
@@ -149,7 +173,7 @@ text-align: left;
 }
 
 .flatf h1{
-  font-size: 40px;
+  font-size: clamp(30px,6vw,55px);
   font-family: CC Tough Talk;
 }
 
@@ -178,7 +202,7 @@ body::-webkit-scrollbar{
   display: flex;
   Padding: 26px 10%;
   justify-content: space-between;
-  box-shadow: 0 87px 200px -5px rgb(255 255 255 / 3000%);
+  /* box-shadow: 0 87px 200px -5px rgb(255 255 255 / 3000%); */
 }
 
 .navbar ul li a{
@@ -738,6 +762,7 @@ grid-template-areas: "overflow";
   display: flex;
   flex-direction: column;
   justify-content: space-evenly;
+  align-items: center;
 
 }
 
@@ -924,6 +949,13 @@ text-align: left;
 
 }
 
+.bf5{
+  display: block;
+}
+.af5{
+  display: none;
+}
+
 .layer-9-1 img{
   border-radius: 20px;
 }
@@ -1000,18 +1032,42 @@ text-align: left;
 
 .phone-holder{
   padding: 6px 30px;
-
+  width: fit-content;
   border-radius: 38px ;
-  border: 3px solid var(--Rouge-benat, #1940C5)
+  border: 3px solid var(--Rouge-benat, #1940C5) ;
+  transition: 0.1s ease-in-out;
+  cursor: pointer;
+  
+  
 }
+
+.phone-holder:hover{
+  background-color: var(--rouge-benat);
+  color: var(--yellow-benat) !important;
+  transition: 0.1s ease-in-out;
+  
+
+  .phone-holder-reg p{
+    color: var(--yellow-benat);
+    transition: 0.1s ease-in-out;
+    
+  }
+  .svg:not(:root).svg-inline--fa, svg:not(:host).svg-inline--fa{
+    color: var(--yellow-benat);
+  }
+  
+}
+
+
 
 .phone-holder-reg{
   display: flex;
   flex-direction: row;
   align-items: center;
   gap: 20px;
-
+  
 }
+
 
 .phone-holder-reg p{
   font-family: Inter;
@@ -1072,8 +1128,82 @@ color: var(--rouge-benat);
   padding: 10px 30px;
   border-radius: 45px;
   background: rgb(25, 64, 197);
+  cursor: pointer;
 
 }
+
+
+.hefb{
+  cursor: pointer;
+  transition: .1s ease-in-out;
+}
+
+.hefb:hover{
+  background-color: var(--yellow-benat);
+  transition: .1ms ease-in-out;
+  
+}
+
+
+.fullscreen-div {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5); 
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 10;
+
+}
+
+.div-pertty{
+  background-color: #fff;
+  height: 80%;
+  width: 80%;
+  border-radius: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.line-in-midlle{
+  width: 246px;
+height: 6px;
+gap: 0px;
+border-radius: 11px 0px 0px 0px;
+opacity: 0px;
+background-color: var(--rouge-benat);
+}
+
+.div-pertty-reg
+{
+  width: 80%;
+  justify-content: center;
+  align-items: center;
+}
+
+.dp-header{
+  font-family: Inter;
+font-size: 25px;
+font-weight: 700;
+line-height: 30.26px;
+text-align: center;
+
+}
+
+.dp-text{
+  font-family: Inter;
+font-size: 17px;
+font-weight: 500;
+line-height: 20.57px;
+text-align: center;
+
+}
+
 
 /* ////////////////////////////////////////// */
 
@@ -1175,7 +1305,7 @@ text-align: center;
 }
 
 .only-mobile{
-  display: none;
+ 
 }
 
 .align-items-cen{
@@ -1185,7 +1315,7 @@ text-align: center;
 .align-items-cen h1{
 
 font-family: Inter;
-font-size: 15px;
+font-size: clamp(15px,10vw,24px);
 font-weight: 600;
 line-height: 18.15px;
 text-align: center;
@@ -1252,6 +1382,19 @@ color: white;
 
 @media (max-width : 1200px) {
 
+  .img-stuff-regulation{
+    width: 600px;
+  }
+  .slide{
+    flex-direction: column;
+  }
+  .regulating-stuff h3{
+    text-align: center;
+  }
+  .regulating-stuff p{
+    text-align: center;
+  }
+ 
   .navbar ul li a{
     font-size: 18px;
   }
@@ -1260,6 +1403,13 @@ color: white;
   }
   .notes-for-services-regulating{
     width: 80%;
+  }
+  .two-pics-on-line-middle{
+    width: 170px;
+  }
+  .padin-same{
+    height: 300px;
+    width: 300px;
   }
   
 }
@@ -1284,6 +1434,9 @@ color: white;
 }
 
 @media (max-width : 900px) {
+  .horizontal-slide-container button{
+    z-index: 1;
+  }
 
   .layer-3-1{
 
@@ -1301,10 +1454,12 @@ color: white;
     display: none;
     width: 100%;
   }
-
-  .only-mobile{
-      display: block;
+  .holding-fold{
+    justify-content: center !important;
+    width: 100%;
   }
+  
+
   
   .navbar-item-h a { /* Assuming "a" is the anchor tag within the Link component */
     display: block; /* Makes the anchor element span the entire width of the container */
@@ -1367,6 +1522,11 @@ color: white;
     height: 30px;
     width: 30px;
     cursor: pointer;
+  }
+
+  .div-pretty-reg{
+    display: flex;
+    align-items: center;
   }
 
   .navbar-item-h{
@@ -1474,6 +1634,7 @@ color: white;
   }
   .regulating-stuff h3{
     font-size: 30px;
+    
   }
   .regulating-stuff p {
     font-size: 16px;
@@ -1484,7 +1645,9 @@ color: white;
   .first-layer-all-the-time{
 
   }
-
+  .layer-3-1 h1{
+    text-align: center;
+  }
   .padin-same{
     height: 200px;
     width: 200px;
@@ -1499,14 +1662,64 @@ color: white;
   }
   .flatf{
     margin: auto;
+    align-items: center;
   }
   .flatf h1{
-    font-size: 30px;
+    text-align: center;
   }
-  
+  .disc-before{
+    list-style-type: none;
+    text-align: center;
+  }
+  .multiple-layer-mid{
+    gap: 20px;
+  }
+  .the-duplicate-layer-h1{
+    font-size: 28px;
+  }
 }
 
 
 @media (max-width: 700px) {
+  .first-4-3 p{
+    font-size: 15px;
+  }
   
+}
+
+@media (max-width: 500px) {
+  .img-showcase-regulation{
+    width: 150px  !important;
+    height: auto !important;
+  }
+  .regulating-stuff h3{
+    font-size: 24px;
+
+  }
+  .bf5{
+    display:none;
+
+  }
+  .af5{
+    display: block;
+  }
+  .fm-line{
+    width: 350px;
+  }
+
+}
+
+@media (max-width: 800px ) {
+  .text-upper-the-phone h4{
+    word-wrap: break-word;
+    width: 100%;
+  }
+  .toping1{
+    display: none;
+
+  }
+
+  .toping3{
+    display: none;
+  }
 }

@@ -28,15 +28,15 @@ function Benefits(){
   return (
   <div className="layer-2-1">
         <div className="fr-one rg">
-        <img src="/img/statsm.png"/>
+        <img src="/img/statsm.png" alt="1"/>
         <p className="">TAUX DE REUSSIE ELEVE</p>
         </div>
         <div className="fr-two rg">
-        <img src="/img/hand.png"/>
+        <img src="/img/hand.png" alt="2"/>
         <p>8 INSTRUCTEURS A VOTRE SERVICE</p>
         </div>
         <div className="fr-three rg">
-        <img src="/img/ed.png"/>
+        <img src="/img/ed.png" alt="3"/>
         <p>COURS EN LIGNE</p>
         </div>
       </div>
@@ -48,9 +48,9 @@ function Passage(){
   return(
     <div className="layer-4-1">
         <div className="layer-4-1-holder">
-        <p>La majorité des élèves décrochent leur permis dès le premier passage de l’examen !</p>
+        <p>La majorité des élèves décrochent leur permis dès le premier passage de l&apos;’examen !</p>
         <div className="text-under-sline"/>
-        <img src="/img/cute-car.png" className="cute-car"/>
+        <img src="/img/cute-car.png" className="cute-car" alt="cute"/>
         </div>
       </div>
   )
@@ -93,19 +93,29 @@ function First()
     { day: 'VENDREDI', time: '14H30-18H' },
   ];
 
+  const YouData = [
+    { day: 'DE LUNDI', time: '14H30-18H' },
+    { day: 'A VENDREDI', time: '14H30-18H' },
+  ];
+
   return(
     <div className="layer-7-1 layer-7-1a">
       <div className="upper-section">
 
         <div className="right-side-agency">
           <div className="main_image">
-            <img src="/img/sadc-boutiqueb.png" className="rsa-image"/>
+            <img src="/img/sadc-boutiqueb.png" className="rsa-image" alt="iu"/>
           </div>
             <div className="main_text flex flex-col gap-4">
               <h1 className="sans text-2xl font-medium leading-9 text-center">
-              Horaires d’ouverture de l’agence :
+              Horaires d&apos;’ouverture de l&apos;’agence :
               </h1>
-              <MyTable data={MyData} />
+              <div className="bf5">
+              <MyTable data={MyData}  />
+              </div>
+              <div className="af5">
+              <MyTable data={YouData} />
+              </div>
             </div>
           
 
@@ -115,7 +125,7 @@ function First()
         <div className="left-side-agency">
           {/* <img src="/img/sadc-cars.png" className="lsa-image"/> */}
             <div className="main_image">
-              <img src="/img/sadc-carsb.png" className="rsa-image"/>
+              <img src="/img/sadc-carsb.png" className="rsa-image" alt="no"/>
             </div>
             <div className="main_text flex flex-col mt-regu">
               <h1>
@@ -127,7 +137,7 @@ function First()
       <div className="Buttom-section">
         <div className="right-side-agency">
         <div className="main_image">
-            <img src="/img/color-back.png" className="rsa-image"/>
+            <img src="/img/color-back.png" className="rsa-image" alt="kit"/>
           </div>
             <div className="main_text mt-regu">
               <h1>
@@ -136,7 +146,7 @@ function First()
               <p>
               Nous sommes disponible par téléphone au 05 57 43 34 20 <br /> Nous vous recontacterons dès que possible.
               </p>
-              <div className="review-google-rev">
+              <div className="review-google-rev hefb">
                     <div>
                       <p className="sans text-xl font-semibold leading-6 text-center">NOUS CONTACTER</p> 
                     </div>
@@ -170,11 +180,11 @@ function Second()
         <div className="right-side-agency">
           {/* <img src="/img/punac-boutique.png" className="rsa-image"/> */}
           <div className="main_image">
-            <img src="/img/punac-boutiqueb.png" className="rsa-image"/>
+            <img src="/img/punac-boutiqueb.png" className="rsa-image" alt="jo"/>
           </div>
             <div className="main_text flex flex-col gap-4">
               <h1 className="sans text-2xl font-medium leading-9 text-center">
-              Horaires d’ouverture de l’agence :
+              Horaires d&apos;’ouverture de l&apos;’agence :
               </h1>
               <MyTable data={MyData} />
             </div>
@@ -185,7 +195,8 @@ function Second()
           {/* <img src="/img/punac-cars.png" className="lsa-image"/> */}
 
           <div className="main_image">
-              <img src="/img/punac-carsb.png" className="rsa-image"/>
+              <img src="/img/punac-carsb.png" className="rsa-image" alt="meq"/>
+             
             </div>
             <div className="main_text flex flex-col mt-regu">
               <h1>
@@ -198,16 +209,16 @@ function Second()
       <div className="Buttom-section">
         <div className="right-side-agency">
         <div className="main_image">
-            <img src="/img/color-back.png" className="rsa-image"/>
+            <img src="/img/color-back.png" className="rsa-image" alt="opn"/>
           </div>
             <div className="main_text mt-regu">
               <h1>
               21 ROUTE DE BOURG 33710 PUGNAC
               </h1>
               <p>
-              Nous sommes disponible par téléphone au 05 57 43 34 20 ou par mail à l’adresse contact@exemple.com
+              Nous sommes disponible par téléphone au 05 57 43 34 20 ou par mail à l&apos;’adresse contact@exemple.com
               </p>
-              <div className="review-google-rev">
+              <div className="review-google-rev hefb">
                     <div>
                       <p className="sans text-xl font-semibold leading-6 text-center">NOUS CONTACTER</p> 
                     </div>
@@ -296,7 +307,7 @@ export default function Home()
             LE PERMIS EN UN CLAQUEMENT<br /> DE DOIGTS !
           </h1>
           <div className="holding-fold">
-            <div className="review-google-rev">
+            <div className="review-google-rev hefb">
               <div>
                 <p>EN SAVOIR PLUS</p> 
               </div>
@@ -310,7 +321,7 @@ export default function Home()
           <div className="layering3">
             <div className="layer-3-1-img">
             
-                <img src="/img/multi-cars.png" alt="" />
+                <img src="/img/multi-cars.png" alt="eeg" />
             </div>
             <div className="layer-3-1-reg">
                 <h1>
@@ -325,26 +336,33 @@ export default function Home()
       <Passage />
       <div className="layer-5-1">
         <div className="two-pics-on-line ">
-          <div className="flex flex-col align-items-cen"> <img src="/img/andts.png" className="two-pics-left two-pics-on-line-left padin-same " /><h1 className="only-mobile">Agence nationale des titres sécurisés</h1> </div>
+          <div className="flex flex-col align-items-cen">
+            <a href="https://www.securite-routiere.gouv.fr/resultats-du-permis-de-conduire#/" target="_blank"> <img src="/img/andts.png" className="two-pics-left two-pics-on-line-left padin-same " alt="thos" /></a>
+             <h1 className="only-mobile">Agence nationale des titres sécurisés</h1> 
+             </div>
           <div className="two-pics-on-line-middle"></div>
-          <div className=" flex flex-col align-items-cen"> <img src="/img/rdpdc.png" className="two-pics-right two-pics-on-line-right padin-same " /> <h1 className="only-mobile">Résultats du permis de conduire</h1></div>
+          <div className=" flex flex-col align-items-cen">
+          <a href="https://ants.gouv.fr/" target="_blank"> <img  src="/img/rdpdc.png" className="two-pics-right two-pics-on-line-right padin-same " alt="soap"/> </a>
+               {/* <div className="absolute h-full w-full"></div> */}
+             <h1 className="only-mobile">Résultats du permis de conduire</h1>
+          </div>
         </div>
       </div>
       <div className="layer-6-1">
-        <img src="/img/lemon-aaaa.png" className="lemon-up"/>
+        <img src="/img/lemon-aaaa.png" className="lemon-up" alt="nop"/>
         <div className=""></div>
         <div className="notes-for-services">
         <div className="notes-for-services-regulating">
 
           <div className="first-three-notes grid grid-cols-3 gap-x-4">
           {myTitles.slice(0, numItemsFirstDiv).map((title, index) => (
-            <Notes key={index} header={title} text={myTexts[index]} />
+            <Notes key={index} header={title} text={myTexts[index]} selection={1}/>
             ))}
 
           </div>
           <div className="second-three-notes grid grid-cols-2 gap-x-4 ">
             {myTitles.slice(numItemsFirstDiv).map((title, index) => (
-              <Notes key={index + numItemsFirstDiv} header={title} text={myTexts[index + numItemsFirstDiv]} />
+              <Notes key={index + numItemsFirstDiv} header={title} text={myTexts[index + numItemsFirstDiv]} selection={1} />
               ))}
           </div>
         </div>
@@ -371,15 +389,15 @@ export default function Home()
                      <p>VOIR NOS AVIS GOOGLE</p> 
                    </div>
                    <div className="google-svg">
-                      <img src="/icon-chrome.svg"/>
+                      <img src="/icon-chrome.svg" alt="dope"/>
                    </div>
                  </div>
-                 <div className="review-google-rev">
+                 <div className="review-google-rev hefb">
                     <div>
                       <p>DONNER UN AVIS</p> 
                     </div>
                     <div className="google-svg">
-                      <img src="/Vector.svg"/>
+                      <img src="/Vector.svg" alt="hope"/>
                    </div>
                  </div>
 
@@ -397,7 +415,7 @@ export default function Home()
       <div className="layer-10-1">
         <div className="pre-footer-first-page">
           <div>
-            <img src="/img/head-of-support.png"/>
+            <img src="/img/head-of-support.png" alt="pilo"/>
           </div>
           <div className="text-upper-the-phone">
             <div>
