@@ -325,6 +325,7 @@ export default function Home()
             <div className="layer-3-1-img">
             
                 <img src="/img/multi-cars.png" alt="eeg" />
+                <img src="/img/Layer_1.png" alt="maybe" className="absolute z-20 pic-lemon" />
             </div>
             <div className="layer-3-1-reg">
                 <h1>

@@ -282,8 +282,9 @@ background: linear-gradient(0.15turn, var(--rouge-benat), var(--light-benat));
   display: flex;
   align-items: center;
   justify-content: space-evenly;
-  padding: 10% 0;
+  padding: 15% 0;
   gap: 20px;
+  
   
 }
 
@@ -291,6 +292,7 @@ background: linear-gradient(0.15turn, var(--rouge-benat), var(--light-benat));
   padding: 10px;
   border: 10px solid #93A6E6;
   border-radius: 55px;
+  position: relative;
 
 }
 
@@ -1726,4 +1728,10 @@ color: white;
 
 .footer-item:hover{
   color: var(--yellow-benat);
+}
+
+.pic-lemon{
+  transform: translate(50%,-50%);
+  right: 0;
+  clip-path: polygon(50% 0%, 100% 0, 100% 100%, 75% 100%, 0 100%, 0 50%, 50% 50%);
 }
