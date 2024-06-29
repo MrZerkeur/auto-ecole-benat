@@ -1679,6 +1679,9 @@ color: white;
   .the-duplicate-layer-h1{
     font-size: 28px;
   }
+  .pic-lemon{
+    display: none;
+  }
 }
 
 
@@ -1708,6 +1711,7 @@ color: white;
   .fm-line{
     width: 350px;
   }
+ 
 
 }
 
