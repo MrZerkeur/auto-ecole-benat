@@ -16,6 +16,7 @@ WORKDIR /app
 COPY --from=builder /app/.next ./.next
 COPY --from=builder /app/package.json .
 COPY --from=builder /app/package-lock.json .
+COPY --from=builder /app/fonts ./fonts
 
 # RUN NODE_ENV=development npm i
 RUN npm install --production
